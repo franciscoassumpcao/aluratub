@@ -5,11 +5,8 @@ import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
-  const estilosDaHomePage = {
-      // backgroundColor: "red" 
-  };
-
-  // console.log(config.playlists);
+  const estilosDaHomePage = {      
+  }; 
 
   return (
       <>
@@ -18,7 +15,7 @@ function HomePage() {
               display: "flex",
               flexDirection: "column",
               flex: 1,
-              // backgroundColor: "red",
+              
           }}>
               <Menu />
               <Header />
@@ -31,15 +28,6 @@ function HomePage() {
 }
 
 export default HomePage
-
-// function Menu() {
-//     return (
-//         <div>
-//             Menu
-//         </div>
-//     )
-// }
-
 
 const StyledHeader = styled.div`
   img {
@@ -76,7 +64,7 @@ function Header() {
 }
 
 function Timeline(propriedades) {
-  // console.log("Dentro do componente", propriedades.playlists);
+  
   const playlistNames = Object.keys(propriedades.playlists);
   // Statement
   // Retorno por expressão
